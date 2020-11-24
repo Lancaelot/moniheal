@@ -4,7 +4,7 @@ import { Switch, Link, Route } from 'react-router-dom';
 
 export const App = () => (
   <div>
-    React starter pack
+    Moniheal
     <div>
       <nav className="nav">
         <Link to="/">Home</Link>
