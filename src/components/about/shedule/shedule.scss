@@ -1,0 +1,21 @@
+.shedule {
+  &__title {
+    font-weight: 450;
+    font-size: 24px;
+    margin-bottom: 41px;
+  }
+  &__item {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    margin-bottom: 29px;
+    &::after {
+      display: block;
+      content: '';
+      position: absolute;
+      width: 100%;
+      top: 33px;
+      border: 1px solid #D2E1F5;
+    }
+  }
+}

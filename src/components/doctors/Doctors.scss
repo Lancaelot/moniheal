@@ -1,0 +1,25 @@
+.doctors {
+  padding: 121px 0;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  &__button-forward {
+    position: absolute;
+    right: -5.6%;
+    top: 53%;
+    transform: translateY(-50%)
+  }
+  &__button-backward {
+    position: absolute;
+    left: -5.6%;
+    top: 53%;
+    transform: translateY(-50%)
+  }
+}

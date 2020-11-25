@@ -1,0 +1,93 @@
+.doctor-card {
+  position: relative;
+  max-width: 330px;
+  border: 1px solid #D2E1F5;
+  border-radius: 8px;
+  font-size: 12px;
+  line-height: 15px;
+  padding: 30px 0px;
+  font-weight: 450;
+  &::after, &::before {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #D2E1F5;
+  }
+  &::before {
+    top: 140px;
+  }
+  &::after {
+    top: 204px;
+  }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px 16px;
+  }
+
+  &__avatar {
+    margin-right: 17px;
+  }
+
+  &__subtitle {
+    font-weight: 450;
+    color: #AFB9DD;
+  }
+
+  &__name {
+    margin-bottom: 13px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #3B3B3B;
+  }
+
+  &__position {
+    color: #16395B;
+  }
+
+  &__address {
+    font-weight: 300;
+    white-space: pre-wrap;
+  }
+
+  &__status {
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 17px;
+    text-align: center;
+    color: #A7C0E2;
+    &--online {
+      font-weight: 750;
+      font-size: 10px;
+      text-align: center;
+      line-height: 17px;
+      color: #2BBB97;
+    }
+  }
+  &__mid {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding: 15px 30px 13px;
+    &--container {
+      display: flex;
+      justify-content: flex-start;
+      margin-top: 7px;
+    }
+  }
+
+  &__info-text {
+    font-weight: 750;
+    margin-left: 10px;
+    line-height: 12px
+  }
+
+  &__subtitle {
+    margin-bottom: 3px
+  }
+  &__bottom {
+    padding: 20px 26px 0 28px;
+  }
+}

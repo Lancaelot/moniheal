@@ -1,0 +1,10 @@
+.news {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__item {
+    max-width: 330px;
+  }
+}

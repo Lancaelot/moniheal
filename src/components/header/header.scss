@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 81px;
+  box-sizing: border-box;
+  font-size: 16px;
+  &__button {
+    align-items: center;
+    margin-left: 3%;
+    &--lock {
+      margin: 0px 10.67px 2px 0px;
+      height: 14px;
+    }
+  }
+  &__search {
+    margin-left: 18%;
+  }
+  &__lang {
+    font-weight: 600;
+    margin-left: 18%;
+  }
+}

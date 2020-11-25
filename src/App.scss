@@ -1,8 +1,154 @@
-.nav {
-  display: flex;
-  margin: 20px;
+.app {
+  box-sizing: border-box;
+  color: #16395B;
+}
 
-  * {
-    margin-right: 10px;
+
+.wrapper {
+  max-width: 1660px;
+  margin: 0 auto;
+  padding: 0 7.5%;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 155px;
+  height: 50px;
+  background: content-box url("./icons/logo.svg");
+}
+
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 27.7%;
+  height: 50px;
+  padding: 8px 8px 10px 13px;
+  border: 1px solid #D2E1F5;
+  border-radius: 4px;
+  box-sizing: border-box;
+  &__input {
+    outline: none;
+    border: none;
+  }
+
+}
+
+.button {
+  width: 100px;
+  height: 36px;
+  padding: 6px;
+  background: #32D29F;
+  border-radius: 2px;
+  outline: none;
+  border: none;
+  color: white;
+}
+select {
+  border:0px;
+  outline:0px;
+}
+
+.menu {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  width: 75px;
+  height: 36px;
+
+  &__burger {
+    width: 18px;
+    height: 3px;
+    position: absolute;
+    right: 3px;
+    background: #16395B;
+    &::after, &::before {
+      content: '';
+      position: absolute;
+      width: 18px;
+      height: 3px;
+      background: #16395B;
+    }
+
+    &::before {
+      top: -5px
+    }
+    &::after {
+      top: 5px
+    }
+  }
+
+  .lang {
+    width: 55px;
+    &__select {
+      font-weight: 900;
+    }
+    &__value {
+      font-weight: 900;
+    }
+  }
+}
+
+.page {
+  height: 83px;
+}
+
+.subtitle {
+  font-weight: 450;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 30px;
+}
+
+.show-button {
+  width: 135px;
+  height: 36px;
+  background: none;
+  outline: none;
+  border: 1px solid #2BBB97;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 36px;
+  text-align: center;
+  color: #2BBB97;
+}
+
+.button-forward {
+  width: 60px;
+  height: 60px;
+  outline: none;
+  border: none;
+  background: center no-repeat url("/icons/forward-button.svg");
+  background-size: contain;
+}
+
+.button-backward {
+  width: 60px;
+  height: 60px;
+  outline: none;
+  border: none;
+  background: center no-repeat url("/icons/backward-button.svg");
+  background-size: contain;
+}
+
+.button-more {
+  display: block;
+  position: relative;
+  font-weight: 550;
+  background: none;
+  padding: 0 0 1px 1px;
+  border: 0;
+  outline: 0;
+  color: #25AEF6;
+  &::after {
+    display: block;
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: #25AEF6;
   }
 }

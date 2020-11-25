@@ -1,0 +1,42 @@
+.specialists {
+  width: 74%;
+  &__list {
+    display: grid;
+    height: 15px;
+    grid-gap: 8.5%;
+    grid-template-columns: 25% 24.3% 25%
+  }
+  &__title {
+    display: block;
+    font-weight: 450;
+    font-size: 24px;
+    align-self: flex-end;
+  }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    height: 39px;
+  }
+  &__list {
+    margin-top: 36px;
+  }
+  &__item {
+    margin-bottom: 41px;
+    &--main {
+      color: #25AEF6
+    }
+  }
+  &__button {
+    margin-right: 11%;
+    width: 135px;
+    height: 36px;
+    background: none;
+    outline: none;
+    border: 1px solid #2BBB97;
+    border-radius: 2px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #2BBB97;
+    align-self: flex-start;
+  }
+}
