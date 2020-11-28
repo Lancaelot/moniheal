@@ -1,14 +1,13 @@
-.shedule {
+.schedule {
   &__title {
-    font-weight: 450;
     font-size: 24px;
-    margin-bottom: 41px;
+    margin-bottom: 38px;
   }
   &__item {
     display: flex;
     position: relative;
     justify-content: space-between;
-    margin-bottom: 29px;
+    margin-bottom: 24px;
     &::after {
       display: block;
       content: '';
@@ -19,3 +18,16 @@
     }
   }
 }
+
+@media (max-width: 1440px) {
+  .schedule {
+    &__title {
+      font-size: 20px;
+    }
+    &__item {
+      font-size: 18px;
+    }
+  }
+}
+
+

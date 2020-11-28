@@ -1,0 +1,128 @@
+.footer {
+  padding: 58px 7.5% 29px;
+  background: #E5EEFF;
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 42px;
+    margin-bottom: 29px;
+    border-bottom:  1px solid #AFB9DD;
+  }
+
+  &__about, &__social {
+    max-width: 330px;
+  }
+
+  &__email, &__phone {
+    display: flex;
+    align-items: center;
+  }
+  &__email {
+    margin-bottom: 19px;
+  }
+  &__address {
+    margin-left: 10px;
+  }
+
+  &__title {
+    margin-bottom: 28px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  &__list {
+    padding-left: 16px;
+  }
+  &__item {
+    position: relative;
+    margin-bottom: 14px;
+    &::before {
+      display: block;
+      position: absolute;
+      left: -12px;
+      top: 43%;
+      transform: translateX(-46%);
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 3px;
+      background: #A7C0E2;
+    }
+  }
+
+  &__text {
+    margin-bottom: 24px;
+    padding-top: 3px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #3B3B3B;
+  }
+
+  &__link, &__address {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #16395B;
+  }
+  &__facebook {
+    margin-right: 6px;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__mastercard {
+    margin-right: 28px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .footer {
+    &__about, &__social {
+      max-width: 240px;
+    }
+    &__about {
+      margin-right: 20px;
+    }
+    &__social {
+      margin-left: 20px;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .footer {
+    &__body {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    &__about, &__social {
+      max-width: 200px;
+      margin-bottom: 15px;
+    }
+    &__about {
+      order: 1;
+    }
+    &__social {
+      order: 2;
+    }
+    &__sections {
+      order: 3;
+    }
+    &__resources {
+      order: 4;
+    }
+    &__visa, &__mastercard {
+      height: 25px;
+      width: 50px;
+    }
+    &__logo {
+      max-width: 130px;
+    }
+  }
+}

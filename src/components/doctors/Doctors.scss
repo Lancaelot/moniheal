@@ -1,13 +1,13 @@
 .doctors {
-  padding: 121px 0;
+  margin-bottom: 121px;
   &__top {
     display: flex;
     justify-content: space-between;
   }
   &__list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 30px;
     position: relative;
   }
   &__button-forward {
@@ -23,3 +23,59 @@
     transform: translateY(-50%)
   }
 }
+
+@media (max-width: 1520px) {
+  .doctors {
+    &__list {
+      grid-template-columns: repeat(3, 340px);
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+
+@media (max-width: 1440px) {
+  .doctors {
+    &__list {
+      grid-gap: 30px;
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .doctors {
+    &__list {
+      grid-template-columns: repeat(3, 280px);
+      justify-content: center;
+      grid-gap: 40px;
+    }
+  }
+}
+
+@media (max-width: 1090px) {
+  .doctors {
+    margin-bottom: 35px;
+    &__list {
+      grid-template-columns: repeat(2, 280px);
+    }
+  }
+}
+
+@media (max-width: 676px) {
+  .doctors {
+    &__list {
+      grid-template-columns: 280px;
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .doctors {
+    &__list {
+      grid-template-columns: 260px;
+    }
+  }
+}
+
+

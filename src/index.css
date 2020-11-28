@@ -7,12 +7,6 @@ html {
   font-size: 20px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-
 @font-face {
 font-family: "Avenir";
 src: url("./fonts/avenirnextcyr-regular.ttf");

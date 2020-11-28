@@ -1,0 +1,23 @@
+.login {
+  &__button {
+    width: 99px;
+    height: 36px;
+    padding: 6px;
+
+    background: #32D29F;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    color: white;
+    &--lock {
+      margin: 0px 10.67px 2px 0px;
+      height: 14px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .login{
+    display: none;
+  }
+}

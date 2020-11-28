@@ -32,7 +32,6 @@
   }
 
   &__subtitle {
-    font-weight: 450;
     color: #AFB9DD;
   }
 
@@ -89,5 +88,18 @@
   }
   &__bottom {
     padding: 20px 26px 0 28px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .doctor-card {
+    max-width: 280px;
+    padding: 10px 0 30px;
+  }
+}
+
+@media (max-width: 380px) {
+  .doctor-card {
+    max-width: 260px;
   }
 }

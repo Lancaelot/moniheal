@@ -1,56 +1,64 @@
 .service-card {
-  width: 330px;
-  height: 180px;
+
+  max-width: 330px;
+  height: 178px;
+  padding: 27px 30px;
+
   border: 1px solid #D2E1F5;
   border-radius: 8px;
-  padding: 30px;
   &:hover {
     border: 1px solid #2BBB97;
     box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px
   }
+
   &__body {
     display: flex;
     justify-content: space-between;
     padding-right: 24px;
+    align-items: flex-start;
   }
+
   &__title {
-    font-weight: 450;
+    margin-bottom: 10px;
     font-size: 16px;
     line-height: 20px;
-    margin-bottom: 15px
   }
+
   &__text {
+    margin-bottom: 14px;
     font-weight: 450;
     font-size: 12px;
     color: #999999;
-    margin-bottom: 20px;
-
   }
+
   &__time {
     display: flex;
     align-items: center;
     &--icon {
       width: 32px;
       height: 32px;
+      padding: 6px;
       border-radius: 16px;
       background: #E5EEFF;
-      padding: 6px;
     }
     &--text {
+      padding-left: 7px;
       font-size: 12px;
       color: #16395B;
-      padding-left: 7px;
     }
   }
+
   &__price {
     display: flex;
     align-items: center;
+
     &--text {
       font-size: 12px;
       color: #16395B;
       padding-left: 7px;
     }
+
     &--icon {
       width: 32px;
       height: 32px;
@@ -58,5 +66,26 @@
       background: #E5EEFF;
       padding: 6px 7px;
     }
+  }
+}
+
+@media (max-width: 1440px) {
+  .service-card {
+    max-width: 280px;
+    padding: 27px 10px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .service-card {
+    &__title {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .service-card {
+    padding: 20px;
   }
 }

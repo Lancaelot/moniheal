@@ -1,0 +1,11 @@
+.lang {
+  font-weight: 450;
+  font-size: 16px;
+  &__select {
+    width: 58px;
+  }
+  &__select, &__value {
+    font-weight: 450;
+    font-size: 16px;
+  }
+}

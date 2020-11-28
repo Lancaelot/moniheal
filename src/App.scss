@@ -1,94 +1,21 @@
 .app {
-  box-sizing: border-box;
+  font-weight: 450;
+  font-size: 20px;
+  line-height: 25px;
   color: #16395B;
 }
-
 
 .wrapper {
   max-width: 1660px;
   margin: 0 auto;
   padding: 0 7.5%;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
-.logo {
-  width: 155px;
-  height: 50px;
-  background: content-box url("./icons/logo.svg");
-}
-
-
-.search {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 27.7%;
-  height: 50px;
-  padding: 8px 8px 10px 13px;
-  border: 1px solid #D2E1F5;
-  border-radius: 4px;
-  box-sizing: border-box;
-  &__input {
-    outline: none;
-    border: none;
-  }
-
-}
-
-.button {
-  width: 100px;
-  height: 36px;
-  padding: 6px;
-  background: #32D29F;
-  border-radius: 2px;
-  outline: none;
-  border: none;
-  color: white;
-}
 select {
   border:0px;
   outline:0px;
-}
-
-.menu {
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: space-between;
-  width: 75px;
-  height: 36px;
-
-  &__burger {
-    width: 18px;
-    height: 3px;
-    position: absolute;
-    right: 3px;
-    background: #16395B;
-    &::after, &::before {
-      content: '';
-      position: absolute;
-      width: 18px;
-      height: 3px;
-      background: #16395B;
-    }
-
-    &::before {
-      top: -5px
-    }
-    &::after {
-      top: 5px
-    }
-  }
-
-  .lang {
-    width: 55px;
-    &__select {
-      font-weight: 900;
-    }
-    &__value {
-      font-weight: 900;
-    }
-  }
 }
 
 .page {
@@ -123,6 +50,7 @@ select {
   border: none;
   background: center no-repeat url("/icons/forward-button.svg");
   background-size: contain;
+  z-index: 2;
 }
 
 .button-backward {
@@ -132,6 +60,7 @@ select {
   border: none;
   background: center no-repeat url("/icons/backward-button.svg");
   background-size: contain;
+  z-index: 2;
 }
 
 .button-more {
@@ -150,5 +79,31 @@ select {
     height: 2px;
     width: 100%;
     background-color: #25AEF6;
+  }
+}
+
+@media (max-width: 426px) {
+  .button-forward {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+
+@media (max-width: 426px) {
+  .button-backward {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+
+.truncate {
+  -webkit-line-clamp: 9;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  &__small {
+    -webkit-line-clamp: 12;
   }
 }

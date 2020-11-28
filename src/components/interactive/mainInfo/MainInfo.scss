@@ -1,0 +1,126 @@
+.main-info {
+  color: white;
+  background: linear-gradient(130.14deg, #2BBB97 45.98%, #25AEF6 91.19%);
+  padding-top: 66px;
+  padding-left: 3px;
+  &__container {
+    margin: 0 auto;
+    max-width: 540px;
+  }
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 351px;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+  }
+  &__logo {
+    margin-bottom: 17.7px;
+  }
+  &__subtitle {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 42px;
+  }
+  &__rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 73px;
+    height: 30px;
+    font-weight: 750;
+    padding: 3px 7px;
+    border: 2px solid #FFFFFF;
+    border-radius: 4px
+  }
+  &__location {
+    display: flex;
+    line-height: 25px;
+    margin-bottom: 23px;
+    padding-left: 3px;
+    &--icon {
+      align-self: start;
+    }
+    &--address {
+      margin-left: 18px;
+    }
+  }
+  &__phone {
+    display: flex;
+    align-items: center;
+    margin-bottom: 23.5px;
+    padding-left: 3px;
+    &--address {
+      margin-left: 15px;
+    }
+    &--button {
+      background: none;
+      border: none;
+      outline: none;
+      margin-left: 2px;
+    }
+  }
+  &__website {
+    display: flex;
+    margin-bottom: 43px;
+    align-items: center;
+    &--address {
+      margin-left: 16px;
+    }
+    &--icon {
+    }
+  }
+  &__button {
+    width: 200px;
+    height: 50px;
+    color: white;
+    background: none;
+    border: 2px solid white;
+    border-radius: 2px;
+    font-size: 16px;
+    padding: 13px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .main-info {
+    padding: 66px 30px 0;
+    &__title {
+      font-size: 30px;
+    }
+    &__subtitle {
+      font-size: 14px;
+    }
+    &__location {
+      &--address {
+        font-size: 18px;
+      }
+    }
+    &__phone {
+      &--address {
+        font-size: 18px;
+      }
+    }
+    &__website {
+      &--address {
+        font-size: 18px;
+      }
+    }
+  }
+  &__button {
+    font-size: 18px;
+    width: 170px;
+  }
+}
+
+@media (max-width: 750px) {
+  .main-info {
+    padding: 30px;
+  }
+}
