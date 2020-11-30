@@ -1,4 +1,4 @@
-# Gallery-think
+# Moniheal
 
 Write here about your project in two-three sentences.
 - [DEMO-LINK](https://lancaelot.github.io/moniheal/)
