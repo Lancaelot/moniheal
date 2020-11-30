@@ -1,17 +1,23 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Interactive.scss';
 import MainInfo from './mainInfo/MainInfo';
-import Gallery from './gallery/Gallery';
-import Map from './map/Map,';
+import GalleryInfo from './gallery-info/GalleryInfo';
+import MapInfo from './map-info/MapInfo';
 
-const Interactive = () => (
+const Interactive = ({ handleMapBackdrop, handleGalleryBackdrop }) => (
   <section className="interactive">
     <MainInfo />
     <div className="interactive__right">
-      <Gallery />
-      <Map />
+      <GalleryInfo handleBackdrop={handleGalleryBackdrop} />
+      <MapInfo handleBackdrop={handleMapBackdrop} />
     </div>
   </section>
 );
+
+Interactive.propTypes = {
+  handleMapBackdrop: PropTypes.func.isRequired,
+  handleGalleryBackdrop: PropTypes.func.isRequired,
+};
 
 export default Interactive;

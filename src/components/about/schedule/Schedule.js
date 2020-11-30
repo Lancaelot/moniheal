@@ -3,7 +3,7 @@ import './Schedule.scss';
 import { scheduleData } from '../../../data/scheduleData';
 
 const Schedule = () => (
-  <div className="schedule about__schedule">
+  <div className="schedule">
     <div className="schedule__title">
       Графік роботи
     </div>

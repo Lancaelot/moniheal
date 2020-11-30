@@ -35,7 +35,7 @@ const Services = ({ currSize }) => {
   }, [currSize, isMore]);
 
   return (
-    <section className="services">
+    <section className="services" id="services">
       <div className="services__top">
         <div className="services__title">
           Послуги (28)

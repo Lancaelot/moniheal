@@ -1,4 +1,4 @@
-.gallery {
+.gallery-info {
   display: flex;
   align-items: flex-end;
   padding: 51px 52px;
@@ -27,7 +27,7 @@
 }
 
 @media (max-width: 1440px) {
-  .gallery {
+  .gallery-info {
     &__button {
       font-size: 18px;
     }
@@ -35,7 +35,7 @@
 }
 
 @media (max-width: 768px) {
-  .gallery {
+  .info-gallery {
     padding: 30px 20px;
     max-height: 250px;
     background-size: cover;

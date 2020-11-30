@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.scss';
 import Interactive from './components/interactive/Interactive';
 import Header from './components/header/Header';
@@ -11,18 +11,35 @@ import News from './components/news/News';
 import Download from './components/download/Download';
 import { useWindowSize } from './hooks/hook';
 import Footer from './components/footer/Footer';
+import { Map } from './components/modal/Map';
+import Gallery from './components/modal/Gallery';
 
 export const App = () => {
   const currSize = useWindowSize();
+  const [isMapBackdrop, setIsMapBackdrop] = useState(false);
+  const [isGalleryBackdrop, setIsGalleryBackdrop] = useState(false);
+
+  const handleMapBackdrop = () => {
+    setIsMapBackdrop(!isMapBackdrop);
+  };
+
+  const handleGalleryBackdrop = () => {
+    setIsGalleryBackdrop(!isGalleryBackdrop);
+  };
 
   return (
     <div className="app">
       <div className="wrapper">
         <Header />
       </div>
+      {isMapBackdrop && <Map handleBackdrop={handleMapBackdrop} />}
+      {isGalleryBackdrop && <Gallery />}
       <div className="page" />
       <div className="wrapper">
-        <Interactive />
+        <Interactive
+          handleMapBackdrop={handleMapBackdrop}
+          handleGalleryBackdrop={handleGalleryBackdrop}
+        />
       </div>
       <div className="wrapper">
         <About currSize={currSize} />

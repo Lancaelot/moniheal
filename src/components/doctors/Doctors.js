@@ -36,7 +36,7 @@ const Doctors = ({ currSize }) => {
   }, [currSize, isMore]);
 
   return (
-    <div className="doctors">
+    <section className="doctors">
       <div className="doctors__top">
         <div className="subtitle">Лікарі (28)</div>
         <button
@@ -62,7 +62,7 @@ const Doctors = ({ currSize }) => {
           </li>
         ))}
       </ul>
-    </div>
+    </section>
   );
 };
 

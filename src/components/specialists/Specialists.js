@@ -7,7 +7,7 @@ const Specialists = ({ currSize }) => {
   const [isMore, setIsMore] = useState(false);
 
   return (
-    <section className="specialists">
+    <section className="specialists" id="specialists">
       <div className="specialists__top">
         <div className="specialists__title">
           Спеціальності (43)

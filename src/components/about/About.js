@@ -14,7 +14,7 @@ const About = ({ currSize }) => {
   );
 
   return (
-    <section className="about">
+    <section className="about" id="about">
       <div className="about__body">
         <h2 className="about__title">
           Про клініку

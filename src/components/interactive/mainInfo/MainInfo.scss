@@ -62,6 +62,7 @@
       border: none;
       outline: none;
       margin-left: 2px;
+
     }
   }
   &__website {
@@ -85,6 +86,10 @@
     padding: 13px;
     font-weight: 600;
     line-height: 24px;
+    transition: transform 200ms ease;
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 }
 

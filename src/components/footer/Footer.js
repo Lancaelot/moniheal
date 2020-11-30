@@ -8,7 +8,6 @@ import masterIcon from '../../icons/footer/masterCard.svg';
 import facebookIcon from '../../icons/footer/facebook.svg';
 import instagramIcon from '../../icons/footer/instagram.svg';
 /* eslint-disable */
-
 const Footer = () => (
   <footer className="footer">
     <div className="footer__body">
@@ -26,7 +25,8 @@ const Footer = () => (
             alt="email"
             align="phoneIcon"
             src={emailIcon}
-            className="footer__email--icon" />
+            className="footer__email--icon"
+          />
           <div className="footer__address">
             helpmoniheal@gmail.com
           </div>
@@ -48,25 +48,25 @@ const Footer = () => (
         </h4>
         <ul className="footer__list">
           <li className="footer__item">
-            <a href="#" className="footer__link">Про нас</a>
+            <a href="#about" className="footer__link">Про нас</a>
           </li>
           <li className="footer__item">
             <a href="#" className="footer__link">Користувачам</a>
           </li>
           <li className="footer__item">
-            <a href="#" className="footer__link">Лікарям</a>
+            <a href="#specialists" className="footer__link">Лікарям</a>
           </li>
           <li className="footer__item">
-            <a href="#" className="footer__link">Клінікам</a>
+            <a href="#services" className="footer__link">Клінікам</a>
           </li>
           <li className="footer__item">
-            <a href="#" className="footer__link">Новини</a>
+            <a href="#news" className="footer__link">Новини</a>
           </li>
           <li className="footer__item">
-            <a href="#" className="footer__link">Знайти фахівця</a>
+            <a href="#doctors" className="footer__link">Знайти фахівця</a>
           </li>
           <li className="footer__item">
-            <a href="#" className="footer__link">Клініки</a>
+            <a href="#map" className="footer__link">Клініки</a>
           </li>
         </ul>
       </div>

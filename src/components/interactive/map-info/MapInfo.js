@@ -1,9 +1,10 @@
 import React from 'react';
-import './Map.scss';
+import PropTypes from 'prop-types';
+import './MapInfo.scss';
 import mapIcon from '../../../icons/map/map.svg';
 
-const Map = () => (
-  <div className="map">
+const MapInfo = ({ handleBackdrop }) => (
+  <div className="map" id="#map">
     <div className="map__container">
       <img
         alt="map-icon"
@@ -11,6 +12,7 @@ const Map = () => (
         className="map__icon"
       />
       <button
+        onClick={() => handleBackdrop()}
         type="button"
         className="map__button"
       >
@@ -20,4 +22,8 @@ const Map = () => (
   </div>
 );
 
-export default Map;
+MapInfo.propTypes = {
+  handleBackdrop: PropTypes.func.isRequired,
+};
+
+export default MapInfo;

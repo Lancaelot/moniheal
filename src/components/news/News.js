@@ -32,7 +32,7 @@ const News = ({ currSize }) => {
   }, [currSize, isMore]);
 
   return (
-    <section className="news">
+    <section className="news" id="news">
       <div className="subtitle">
         Новини клініки (28)
       </div>

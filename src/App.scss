@@ -3,6 +3,7 @@
   font-size: 20px;
   line-height: 25px;
   color: #16395B;
+
 }
 
 .wrapper {
@@ -41,26 +42,32 @@ select {
   line-height: 36px;
   text-align: center;
   color: #2BBB97;
+  transition: transform 200ms ease;
+  &:hover {
+    transform: scale(1.02);
+  }
 }
 
-.button-forward {
-  width: 60px;
-  height: 60px;
-  outline: none;
-  border: none;
-  background: center no-repeat url("/icons/forward-button.svg");
-  background-size: contain;
-  z-index: 2;
-}
-
+.button-forward,
 .button-backward {
   width: 60px;
   height: 60px;
   outline: none;
   border: none;
-  background: center no-repeat url("/icons/backward-button.svg");
   background-size: contain;
   z-index: 2;
+  transition: transform 200ms ease;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.button-backward {
+  background: center no-repeat url("/icons/backward-button.svg");
+}
+
+.button-forward {
+  background: center no-repeat url("/icons/forward-button.svg");
 }
 
 .button-more {
@@ -72,6 +79,10 @@ select {
   border: 0;
   outline: 0;
   color: #25AEF6;
+  transition: transform 200ms ease;
+  &:hover {
+    transform: scale(1.05);
+  }
   &::after {
     display: block;
     position: absolute;

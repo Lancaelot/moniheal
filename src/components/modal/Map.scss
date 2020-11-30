@@ -1,0 +1,106 @@
+.backdrop-map {
+  &__container {
+    display: grid;
+    grid-template-columns: 2.2fr 0.8fr;
+    position: relative;
+    width: 70%;
+    height: 70%;
+    margin: 0 auto;
+    padding-bottom: 5%;
+  }
+  &__card {
+    background-color: white;
+  }
+
+  &__button {
+    position: absolute;
+    background: none;
+    outline: none;
+    border: none;
+    top: -25px;
+    right: -35px;
+  }
+  &__map {
+    background: center url("../../images/map/map.png");
+  }
+
+  &__card {
+    padding: 30px;
+  }
+  &__top, &__info {
+    display: flex;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #D2E1F5;
+  }
+
+  &__address {
+    margin-bottom: 15px;
+  }
+
+  &__subtitle {
+    margin-bottom: 10px;
+  }
+
+  &__info {
+    justify-content: space-between;
+    &--container {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__logo {
+    margin-right: 15px;
+  }
+
+  &__title {
+    font-weight: 750;
+    font-size: 16px;
+    line-height: 20px;
+    color: #3B3B3B;
+  }
+
+  &__subtitle {
+    font-weight: 450;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: #AFB9DD;
+  }
+
+  &__text {
+    font-weight: 450;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: #16395B;
+  }
+
+  &__text-info {
+    font-weight: 750;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: #3B3B3B
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+}
+
+@media (max-width: 720px) {
+  .backdrop-map {
+    padding-top: 30px;
+    &__card {
+      padding: 10px;
+    }
+    &__logo {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
