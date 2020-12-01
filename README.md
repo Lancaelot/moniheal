@@ -1,6 +1,6 @@
 # Moniheal
 
-Write here about your project in two-three sentences.
+
 - [DEMO-LINK](https://lancaelot.github.io/moniheal/)
 
 - [Markup-LINK](https://drive.google.com/file/d/1y5Tvu5pYFvt3wETjC-3xNFGaktvU3WQU/view?usp=sharing)
